@@ -1,7 +1,7 @@
-# CS_123A_Project Instructions
+# Instructions
 
 1) Load the code into your Python IDE of choice (I used PyCharm)
-    - Unfortunately, we had issues making an executable file due to issues with Biopython
+    - We had issues making an executable file due to issues with Biopython
 2) Install all libraries and dependencies
     - matplotlib
     - Bio
