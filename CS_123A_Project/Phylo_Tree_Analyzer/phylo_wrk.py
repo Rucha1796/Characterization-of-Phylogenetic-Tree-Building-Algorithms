@@ -14,7 +14,7 @@ def perform_msa(input_file, output_file, clustal_path):
     stdout, stderr = clustalomega_cline()
 
 
-# Written by Rucha Deo and Matthew Price
+# Written by Rucha Deo 
 # Retrieve alignment from given file
 def create_alignment(aligned_sequences_file):
     alignment = AlignIO.read(aligned_sequences_file, "fasta")
@@ -42,7 +42,7 @@ def construct_tree(distance_matrix, algorithm='upgma'):
     return tree
 
 
-# Written by Matthew Price
+# Written by Rucha Deo
 # Compare generated tree to bootstrap trees
 def compare_to_bootstrap(tree, tree_count, alignment, algorithm="upgma"):
     calculator = DistanceCalculator('identity')
@@ -104,7 +104,7 @@ def draw_tree(tree, file, algorithm="upgma"):
         raise ValueError("Unsupported algorithm. Please choose either 'upgma' or 'nj'.")
 
 
-# Written by Matthew Price
+# Written by Rucha Deo
 # Tests for a correct UPGMA tree, currently unused because the generated UPGMA tree should always be correct
 def upgma_test_correct(tree):
     for a in tree.get_terminals():
